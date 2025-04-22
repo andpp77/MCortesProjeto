@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+            transition: 0.3s;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #FFD700;
+        }
+
+        .hero {
+            background: url('banner.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cadastramento {
+            background: url('banner.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction:initial;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .btn {
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            border: none;
+            color: #000;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border: none;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        .table-dark {
+            background-color: #222;
+        }
+
+        .table thead {
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        .table tbody tr:hover {
+            background-color: #333;
+        }
+
+        .filtros {
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .logout-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+        }
+
+        .logo-barbearia {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .hero .img-fluid {
+            max-width: 90%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+            border-radius: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .logout-btn {
+                position: static;
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .filtros label,
+            .filtros input,
+            .filtros select,
+            .filtros button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
